@@ -1,0 +1,21 @@
+{
+    "INIT-POP": 1,
+    "AGE-VAR": 100,
+    "SEE-RANGE": 25,
+    "FOOD-SIZE": 100,
+    "FOOD-BUILD": 1,
+    "MAX-LIFE": 500,
+    "BLIP": {
+        "BUDDING-MIN-RES": 100,
+        "MIN-BUDDING-AGE": 150,
+        "MAX-BUDDING-AGE": 350,
+        "BUDDING-PROB": 10,
+        "BUDDING-TIME": 1,
+        "BUD-FACTOR": 2,
+        "POWER-TO-STAY": 1,
+        "VAPOUR-TO-STAY": 1,
+        "POWER-TO-MOVE": 2,
+        "VAPOUR-TO-MOVE": 2,
+        "MAX-RES": 300
+    }
+}
