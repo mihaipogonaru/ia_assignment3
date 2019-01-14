@@ -2,4 +2,4 @@
 
 pip3 install -r requirements.txt
 
-run with: python3 app.py options.json 1
+run with: python3 app.py options.json 0.1
