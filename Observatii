@@ -1,0 +1,21 @@
+Cu optiunile initiale populatia pare sa se mentina in crestere.
+Cresterea BUDDING-TIME la 10 determina o crestere mult mai greoaie a populatiei.
+Scaderea FOOD-SIZE la 20 determina o oarecare declinare a populatiei de 20 de blips.
+Crestere MIN-BUDDING-AGE la 250 determina o crestere mai greoaie a populatiei.
+Scaderea MAX-RES la 150 duce la moartea populatiei dupa doar 100 cicluri.
+Scaderea MAX-RES la 200 duce la moartea populatiei, dar dupa 600 de cicluri.
+Scaderea MAX-RES la 250 mentine populatia in crestere.
+Scaderea BUDDING-PROB la 1% duce la oprirea simularii din motiv de fluctuatie scazuta.
+Cresterea POWER-TO-MOVE la 10 sau la 5 duce la moartea populatiei (dupa peste 200 cicluri),
+blipsii nu pot ajunge la apa fara a ramane fara mancare.
+Cresterea POWER-TO-MOVE la 3 duce la cresterea greoaie a populatiei
+
+Perechi de schimbari:
+Cresterea BUDDING-TIME si a BUD-FACTOR la 5 duce la o stagnare a populatiei in intervalul 40-60
+sau oprirea simularii din motiv de fluctuatie scazuta
+Scaderea MIN-BUDDING-AGE la 0 si cresterea MAX-BUDDING-AGE la MAX-LIFE duce la o crestere
+masiva a populatiei - 240 la 40 cicluri.
+Scaderea MAX-LIFE si AGE-VAR la 300, respectiv 50 nu produce modificari semnificative
+Cresterea POWER-TO-MOVE la 3 si a VAPOUR-TO-MOVE la 3 duce la o stagnare a populatiei in intervalul 10-25,
+oprirea simularii din motiv de fluctuatie scazuta sau la moartea populatiei
+Crestea INIT-POP la 40 si scaderea MAX-LIFE la 250 duce la crestea mai rapida a populatiei

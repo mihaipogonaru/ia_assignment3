@@ -334,6 +334,4 @@ class Medium:
         if blips_found:
             _, dir_to_blip = blips_found[0]
 
-        print((dir_to_water, dir_to_food, dir_to_blip))
-
         return dir_to_water, dir_to_food, dir_to_blip

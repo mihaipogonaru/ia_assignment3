@@ -16,6 +16,7 @@ def main_loop(screen: pygame.Surface, medium: Medium, sq: Tuple[int, int], cycle
     medium_h, medium_l = medium.map_size
     font = pygame.font.SysFont('Arial', 10)
 
+    cycles = 0
     max_population = 0
 
     while True:
@@ -49,7 +50,10 @@ def main_loop(screen: pygame.Surface, medium: Medium, sq: Tuple[int, int], cycle
 
         medium.update()
 
+        print(f'Cycles {cycles}')
         print(f'Population {len(medium.entities)}')
+
+        cycles += 1
         max_population = max(max_population, len(medium.entities))
 
         if not len(medium.entities):
@@ -58,7 +62,6 @@ def main_loop(screen: pygame.Surface, medium: Medium, sq: Tuple[int, int], cycle
         time.sleep(cycle_duration)
 
     print(f'Max population {max_population}')
-
 
 def init_pygame(screen_size) -> pygame.display:
     pygame.init()

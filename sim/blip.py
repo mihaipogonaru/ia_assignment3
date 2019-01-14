@@ -43,7 +43,7 @@ class Blip:
         self.advance_sprouting()
         self.try_to_sprout()
 
-        print(f'{self.resources} - {self.is_sprouting()}')
+        #print(f'{self.resources} - {self.is_sprouting()}')
 
         self.age += 1
         # decide on action
@@ -55,8 +55,8 @@ class Blip:
         water_c, food_c = self.get_resources_consumption(action)
         self.resources = (water - water_c, food - food_c)
 
-        print(f'{self.age} {self.max_age} <-> {self.resources} - {action}')
-        print()
+        #print(f'{self.age} {self.max_age} <-> {self.resources} - {action}')
+        #print()
 
         return action
 
@@ -113,9 +113,9 @@ class Blip:
         # check the raport between resources needed and 
         # cost to move
         if food_n / water_n > food_move / water_move:
-            return Action.West
+            return Action.East
 
-        return Action.East
+        return Action.West
 
     def filter(self, action: Action) -> Action:
         if action is Action.Die:
